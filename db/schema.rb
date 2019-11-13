@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20180304213258) do
     t.string "condicion"
     t.string "color"
     t.string "titulo"
-    t.decimal "precio", precision: 5, scale: 2, default: "0.0"
+    t.decimal "precio"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image"
