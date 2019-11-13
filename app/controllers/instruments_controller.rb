@@ -29,7 +29,7 @@ class InstrumentsController < ApplicationController
 
     respond_to do |format|
       if @instrument.save
-        format.html { redirect_to @instrument, notice: 'Instrument was successfully created.' }
+        format.html { redirect_to @instrument, notice: 'Instrumento creado exitosamente.' }
         format.json { render :show, status: :created, location: @instrument }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class InstrumentsController < ApplicationController
   def update
     respond_to do |format|
       if @instrument.update(instrument_params)
-        format.html { redirect_to @instrument, notice: 'Instrument was successfully updated.' }
+        format.html { redirect_to @instrument, notice: 'Instrumento actualizado exitosamente.' }
         format.json { render :show, status: :ok, location: @instrument }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class InstrumentsController < ApplicationController
   def destroy
     @instrument.destroy
     respond_to do |format|
-      format.html { redirect_to instruments_url, notice: 'Instrument was successfully destroyed.' }
+      format.html { redirect_to instruments_url, notice: 'Instrumento eliminado exitosamente.' }
       format.json { head :no_content }
     end
   end
@@ -70,6 +70,6 @@ class InstrumentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def instrument_params
-      params.require(:instrument).permit(:brand, :model, :description, :condition, :finish, :title, :price, :image)
+      params.require(:instrument).permit(:marca, :modelo, :descripcion, :condicion, :color, :titulo, :precio, :image)
     end
 end

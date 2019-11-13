@@ -3,7 +3,7 @@
     <div class="columns is-centered">
       <div class="column is-4">
         
-				<h2 class="title is-2">Forgot your password?</h2>
+				<h2 class="title is-3">Olvidaste tu contraseña?</h2>
 
 				<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
 				  <%= f.error_notification %>
@@ -14,7 +14,7 @@
 				  	</div>
 					</div>
 				  
-				  <%= f.button :submit, "Send me reset password instructions", class:"button is-outlined" %>
+				  <%= f.button :submit, "Enviarme las instrucciones", class:"button is-outlined" %>
 				  
 				<% end %>
 				<br />

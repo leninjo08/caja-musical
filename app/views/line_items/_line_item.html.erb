@@ -8,10 +8,10 @@
     </figure>
   </div>
   <div class="column is-9">
-    <strong><%= line_item.instrument.title %></strong>
+    <strong><%= line_item.instrument.titulo %></strong>
     <div class="columns align-items-center">
       <div class="content column is-9">
-        <%= truncate(line_item.instrument.description, length: 140) %>
+        <%= truncate(line_item.instrument.descripcion, length: 140) %>
       </div>
       <div class="column is-3 has-text-right">
         <strong class="f4"><%= number_to_currency(line_item.total_price) %></strong>
@@ -21,7 +21,7 @@
 </div>
 
 <div class="has-text-right">
-  <%= link_to 'Remove Item', line_item, method: :delete, data: { confirm: "Are you sure? " }, class: "button is-small mb4" %>
+  <%= link_to 'Eliminar Instrumento', line_item, method: :delete, data: { confirm: "¿Estas seguro? " }, class: "button is-small mb4" %>
 </div>
 
 <hr/ >
